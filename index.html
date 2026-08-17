@@ -599,7 +599,7 @@ a{color:inherit}
       </div>
 
       <p class="code-note" id="codeNote" aria-live="polite">
-        The code expires after a short time.
+        The code expires after 10 minutes.
       </p>
 
       <button class="submit-btn" id="verifyBtn" type="submit" disabled>
@@ -654,7 +654,7 @@ a{color:inherit}
     if (!complete && !inputs.some(input => input.value)){
       inputs.forEach(input => input.classList.remove("is-good"));
       codeNote.className = "code-note";
-      codeNote.textContent = "The code expires after a short time.";
+      codeNote.textContent = "The code expires after 10 minutes.";
     }
   }
 
